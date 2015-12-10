@@ -1,6 +1,6 @@
 ;<?php return; ?>
 [SQL]
-host = HOST
-user = USER
-password = PASSWORD
-dbname = DBNAME
+host = localhost
+user = s_castamler
+password = Andrew94
+dbname = s_castamler_androidProject
