@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/db.php';
+    require_once __DIR__ . '/lib/generalFuncs.php';
     $response = array();
     $db = new DB();
     //get post id
@@ -29,7 +30,7 @@
                 $post = array();
                 $post['PostID'] = $result[0]['PostID'];
                 $post['Content'] = $result[0]['Content'];
-                $post['Time'] = date('n/d/Y g:i a', strtotime($result[0]['Time']));
+                $post['Time'] = date('F j, Y g:i a', strtotime($result[0]['Time']));
                 $post['Username'] = $result[0]['Username'];
                 
                 
@@ -42,7 +43,7 @@
                     
                     $comment['CommentID'] = $row['CommentID'];
                     $comment['Content'] = $row['Content'];
-                    $comment['Time'] = date('n/d/Y g:i a', strtotime($row['Time']));
+                    $comment['Time'] = ago(strtotime($row['Time']));
                     $comment['Username'] = $row['Username'];
                     
                     array_push($response['comments'], $comment);

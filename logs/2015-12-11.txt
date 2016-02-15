@@ -1,0 +1,9 @@
+Time : 01:25:23
+SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+
+Time : 01:24:06
+SQLSTATE[HY000] [1049] Unknown database 's_castamler_androidproject'
+
+Time : 01:23:56
+SQLSTATE[HY000] [1049] Unknown database 's_castamler_androidproject'
