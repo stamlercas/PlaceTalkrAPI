@@ -1,3 +1,0 @@
-Time : 14:45:58
-SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) AS COUNT FROM posts JOIN users on posts.UserID = users.UserID JOIN places on ' at line 1
-Raw SQL : SELECT SUM(*) AS COUNT FROM posts JOIN users on posts.UserID = users.UserID JOIN places on posts.PlaceID = places.PlaceID WHERE posts.UserID = :UserID GROUP BY posts.PlaceID ASC LIMIT 1
